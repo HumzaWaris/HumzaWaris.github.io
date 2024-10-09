@@ -47,7 +47,7 @@
         function calculate() {
             const operation = parseInt(document.getElementById('operation').value);
             const n1 = parseInt(document.getElementById('num1').value);
-            const n2 = parseInt(document.getElementById('num2').value);
+            const n2 = parseInt(document.getElementById('num3').value);
 
             let result = '';
             if (operation === 1) {
@@ -90,6 +90,7 @@
 
     <p id="num2Input" style="display: none;">Please Enter a Second Integer:</p>
     <input type="number" id="num2" placeholder="Enter second number" style="display: none;">
+    <input type="number" id="num3" placeholder="Enter the actual second number lol" style="display: none;">
 
     <br><br>
     <button onclick="calculate()">Submit</button>
