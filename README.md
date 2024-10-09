@@ -102,11 +102,11 @@
         document.getElementById('operation').addEventListener('change', function () {
             const selectedOperation = parseInt(this.value);
             if (selectedOperation === 1) {
-                document.getElementById('num2Input').style.display = 'block';
-                document.getElementById('num2').style.display = 'block';
+                document.getElementById('num3Input').style.display = 'block';
+                document.getElementById('num3').style.display = 'block';
             } else {
-                document.getElementById('num2Input').style.display = 'none';
-                document.getElementById('num2').style.display = 'none';
+                document.getElementById('num3Input').style.display = 'none';
+                document.getElementById('num3').style.display = 'none';
             }
         });
     </script>
