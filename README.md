@@ -43,11 +43,13 @@
             return factors;
         }
 
+        //Function to
+
         // Function to handle button click and display results
         function calculate() {
             const operation = parseInt(document.getElementById('operation').value);
             const n1 = parseInt(document.getElementById('num1').value);
-            const n2 = parseInt(document.getElementById('num3').value);
+            const n2 = parseInt(document.getElementById('num2').value);
 
             let result = '';
             if (operation === 1) {
@@ -90,7 +92,6 @@
 
     <p id="num2Input" style="display: none;">Please Enter a Second Integer:</p>
     <input type="number" id="num2" placeholder="Enter second number" style="display: none;">
-    <input type="number" id="num3" placeholder="Enter the actual second number lol" style="display: none;">
 
     <br><br>
     <button onclick="calculate()">Submit</button>
@@ -102,14 +103,13 @@
         document.getElementById('operation').addEventListener('change', function () {
             const selectedOperation = parseInt(this.value);
             if (selectedOperation === 1) {
-                document.getElementById('num3Input').style.display = 'block';
-                document.getElementById('num3').style.display = 'block';
+                document.getElementById('num2Input').style.display = 'block';
+                document.getElementById('num2').style.display = 'block';
             } else {
-                document.getElementById('num3Input').style.display = 'none';
-                document.getElementById('num3').style.display = 'none';
+                document.getElementById('num2Input').style.display = 'none';
+                document.getElementById('num2').style.display = 'none';
             }
         });
     </script>
 </body>
 </html>
-
