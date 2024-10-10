@@ -43,8 +43,6 @@
             return factors;
         }
 
-        //Function to
-
         // Function to handle button click and display results
         function calculate() {
             const operation = parseInt(document.getElementById('operation').value);
